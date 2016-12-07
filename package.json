@@ -1,0 +1,19 @@
+{
+  "name": "better-redux-form",
+  "version": "0.1.0",
+  "description": "Better redux form",
+  "main": "dist/better-redux-form.min.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "redux",
+    "form",
+    "redux-form",
+    "data",
+    "easy",
+    "better"
+  ],
+  "author": "gaoxiaoliangz",
+  "license": "ISC"
+}
