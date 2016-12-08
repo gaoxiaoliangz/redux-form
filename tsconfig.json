@@ -1,0 +1,15 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es2015",
+    "jsx": "react",
+    "outDir": "public/built_es6",
+    "experimentalDecorators": true,
+    "moduleResolution": "node"
+  },
+  "exclude": [
+    "node_modules",
+    "public"
+  ]
+}

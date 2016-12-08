@@ -15,5 +15,11 @@
     "better"
   ],
   "author": "gaoxiaoliangz",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.43",
+    "@types/react": "^0.14.54",
+    "@types/react-redux": "^4.4.35",
+    "typescript": "^2.1.4"
+  }
 }
