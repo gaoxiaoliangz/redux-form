@@ -63,5 +63,16 @@
     "ts-node": "^1.7.0",
     "webpack": "^1.14.0",
     "webpack-node-externals": "^1.5.4"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoxiaoliangz/better-redux-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gaoxiaoliangz/better-redux-form/issues"
+  },
+  "homepage": "https://github.com/gaoxiaoliangz/better-redux-form#readme"
 }
