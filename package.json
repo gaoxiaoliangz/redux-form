@@ -13,8 +13,8 @@
     "build:lib": "babel js --out-dir lib",
     "prebuild:es": "npm run build:js",
     "build:es": "cross-env BABEL_ENV=es babel js --out-dir es",
-    "build:umd": "cross-env NODE_ENV=development webpack src/index.ts dist/simple-epub-parser.js",
-    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.ts dist/simple-epub-parser.min.js",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index.ts dist/better-redux-form.js",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.ts dist/better-redux-form.min.js",
     "clean": "rimraf dist lib js es types"
   },
   "keywords": [

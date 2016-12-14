@@ -6,14 +6,14 @@ import * as selectors from './selectors'
 
 const formActions = actions.form
 
-interface FormConfig {
+export interface FormConfig {
   form: string
   fields: string[]
   validate?: (values: any) => any
   destroyOnUnmount?: boolean
 }
 
-interface FormProps {
+export interface FormProps {
   change: typeof actions.change
   touch: typeof actions.touch
   defineField: typeof actions.defineField
@@ -24,12 +24,10 @@ interface FormProps {
   formDefinition: any
 }
 
-class ElementClass extends Component<any, any> {
+export class ElementClass extends Component<any, any> {
 }
 
-interface CreateFormClassDecorator {
-  // TODO: why so?
-  // <T extends (typeof ElementClass)>(config: FormConfig): T
+export interface CreateFormClassDecorator {
   <T extends Function>(config: FormConfig): T
 }
 
