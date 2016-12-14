@@ -1,8 +1,8 @@
 import React, { Component, createElement } from 'react'
 import { connect } from 'react-redux'
 import _ from 'lodash'
-import * as actions from '../store/actions'
-import * as selectors from '../store/selectors'
+import * as actions from './actions'
+import * as selectors from './selectors'
 
 const formActions = actions.form
 
@@ -143,14 +143,14 @@ const createForm: CreateFormClassDecorator = (config: FormConfig) => {
     return connect(
       state => {
         return {
-          form: selectors.form.fullForm(formName)(state),
-          formValues: selectors.form.formValues(formName)(state),
-          formDefinition: selectors.form.formDefinition(formName)(state),
-          formMeta: selectors.form.formMeta(formName)(state)
+          form: selectors.fullForm(formName)(state),
+          formValues: selectors.formValues(formName)(state),
+          formDefinition: selectors.formDefinition(formName)(state),
+          formMeta: selectors.formMeta(formName)(state)
         }
       },
       formActions
-    )(Form as any)
+    )(Form)
   }
 }
 
