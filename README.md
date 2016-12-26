@@ -9,7 +9,8 @@ npm install better-redux-form --save
 ```
 
 ## Getting Started With better-redux-form
-better-redux-form primarily consists of four things:
+
+better-redux-form primarily consists of three things:
 
 1. A Redux reducer that listens to dispatched better-redux-form actions to maintain your form state in Redux.
 2. A React component decorator that wraps your entire form in a Higher Order Component (HOC) and provides functionality via props.
@@ -92,6 +93,10 @@ A list of all your fields in your form.
 
 a synchronous validation function that takes the form values passed into your component. If validation passes, it should return {}. If validation fails, it should return the validation errors in the form { field1: <String>, field2: <String> }. Defaults to (values) => ({}).
 
+#### destroyOnUnmount: boolean
+
+Whether or not to automatically destroy your form's state in the Redux store when your component is unmounted. Defaults to true.
+
 ---
 
 ### props: fields
@@ -124,7 +129,7 @@ A function meant to be passed to <button onClick={handleSubmit(callback)}>. It w
 
 ---
 
-### actionCreators
+### Action creators
 
 initialize(form: string, values)
 
