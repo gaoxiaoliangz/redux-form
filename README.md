@@ -2,6 +2,8 @@
 
 Easy to use redux form
 
+[![npm version](https://badge.fury.io/js/better-redux-form.svg)](https://badge.fury.io/js/better-redux-form)
+
 ## Install
 
 ``` bash
