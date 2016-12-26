@@ -1,4 +1,3 @@
-// @flow
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import rootReducer from './reducers'
@@ -6,7 +5,7 @@ import createLogger from 'redux-logger'
 
 const MIDDLEWARES_DEV = [thunk, createLogger({ collapsed: true })]
 
-const handleStore = (middlewares: any[]) => {
+const handleStore = (middlewares) => {
   return createStore(
     rootReducer,
     {},

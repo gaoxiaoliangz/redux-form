@@ -1,22 +1,9 @@
-// @flow
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import form from 'better-redux-form'
 import _ from 'lodash'
 
-type Props = {
-  handleSubmit: any,
-  fields: any,
-}
-
 class AddAuthorForm extends Component {
-
-  props: Props
-  state: {
-    showResult: boolean,
-    value1: string,
-    value2: string
-  }
 
   constructor(props) {
     super(props)
@@ -70,7 +57,8 @@ class AddAuthorForm extends Component {
 
 AddAuthorForm = form({
   form: 'basic',
-  fields: ['value1', 'value2']
+  fields: ['value1', 'value2'],
+  destroyOnUnmount: true
 })(AddAuthorForm)
 
 AddAuthorForm = connect(
