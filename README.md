@@ -41,6 +41,9 @@ Decorate your form component with form(). This will provide your component with 
 ```
 import React, {Component} from 'react'
 import form from 'better-redux-form'
+// Note:
+// if you use `require` don't forget to add `.default` to your import
+// const form = require('better-redux-form').default
 
 class ContactForm extends Component {
   render() {
