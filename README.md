@@ -24,7 +24,7 @@ better-redux-form primarily consists of three things:
 
 The first thing that you have to do is to give the better-redux-form reducer to Redux. You will only have to do this once, no matter how many form components your app uses.
 
-```
+```js
 import {createStore, combineReducers} from 'redux'
 import {reducer as formReducer} from 'better-redux-form'
 const reducers = {
@@ -38,7 +38,7 @@ const store = createStore(reducer);
 
 Decorate your form component with form(). This will provide your component with props allowing you to attach your inputs to better-redux-form.
 
-```
+```js
 import React, {Component} from 'react'
 import form from 'better-redux-form'
 // Note:
