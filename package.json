@@ -1,6 +1,6 @@
 {
   "name": "better-redux-form",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Better redux form",
   "main": "lib/index.js",
   "types": "./types/index.d.ts",
