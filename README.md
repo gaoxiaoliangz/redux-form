@@ -49,7 +49,7 @@ class ContactForm extends Component {
   render() {
     const {fields: {firstName, lastName, email}, handleSubmit} = this.props;
     return (
-      <form onSubmit={handleSubmit}>
+      <form>
         <div>
           <label>First Name</label>
           <input type="text" placeholder="First Name" {...firstName}/>
