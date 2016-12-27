@@ -62,7 +62,12 @@ class ContactForm extends Component {
           <label>Email</label>
           <input type="email" placeholder="Email" {...email}/>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={handleSubmit(data => {
+          // field data is passed through `data` parameter
+
+          // your data processing logic here
+          console.log(data)
+        })}>Submit</button>
       </form>
     )
   }
