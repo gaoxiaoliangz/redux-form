@@ -1,5 +1,5 @@
 {
-  "name": "better-redux-form",
+  "name": "@gxl/redux-form",
   "version": "0.2.3",
   "description": "Better redux form",
   "main": "lib/index.js",
