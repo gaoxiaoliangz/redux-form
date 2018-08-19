@@ -1,4 +1,6 @@
-# better-redux-form
+# redux-form
+
+> This project is deprecated
 
 Easy to use redux form
 
